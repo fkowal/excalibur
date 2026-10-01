@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Excalibur — Księga zasad (PL)</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { font-family: "Adobe Garamond Pro", Garamond, Baskerville, "Times New Roman", serif;
+         font-size: 9.6pt; line-height: 1.38; color: #000; background: #fff; }
+  .page { width: 210mm; height: 297mm; padding: 22mm 24mm 16mm 24mm;
+          position: relative; overflow: hidden; page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  p { margin: 0 0 0.85em 0; text-align: justify; }
+  h2 { font-size: 12.5pt; margin: 0 0 0.7em 0; letter-spacing: 0.02em; }
+  .bighead { text-align: center; font-size: 14pt; font-weight: bold; font-style: italic; margin: 0 0 0.8em 0; }
+  .q { font-style: italic; margin-bottom: 0.2em; }
+  .att { margin-bottom: 1.1em; }
+  .cols { display: flex; gap: 7mm; }
+  .col { flex: 1 1 0; min-width: 0; }
+  .sec { margin-bottom: 1.4em; }
+  .pgnum { position: absolute; bottom: 8mm; left: 0; right: 0; text-align: center; font-size: 10pt; }
+  .fig { text-align: center; margin: 0.9em 0; }
+  .fig img { max-width: 100%; }
+  .cap { font-size: 7.8pt; font-style: italic; text-align: center; margin: 0.3em auto 0; max-width: 90%; }
+  .lbl { font-weight: bold; }
+  ul.plain { list-style: none; padding-left: 0; margin: 0 0 0.85em 0; }
+  .indent { padding-left: 2.2em; }
+  .hang { padding-left: 3em; text-indent: -3em; text-align: left; }
+  table.rules { border-collapse: collapse; width: 100%; font-size: 8.6pt; }
+  table.rules td, table.rules th { border: 1px solid #000; padding: 3px 6px; vertical-align: top; text-align: left; }
+  table.rules th { text-align: center; font-weight: bold; }
+  table.rules td.c { text-align: center; }
+  .toc { width: 74%; }
+  .toc td { padding: 0.6px 4px; }
+  .toc .n { width: 3em; }
+  .toc .pg { width: 3em; text-align: right; }
+  .money { margin-left: 1em; margin-bottom: 0.85em; }
+  .money td { padding: 0 8px 0 0; }
+  table.sheet { border-collapse: collapse; font-size: 7.5pt; margin: 0 auto; }
+  table.sheet td { border: 1px solid #000; padding: 1px 4px; }
+  table.sheet td.season { width: 14mm; font-variant: small-caps; }
+  table.sheet td.blank { width: 52mm; }
+</style>
+</head>
+<body>
+
+<!-- ============ STRONA 1 : OKŁADKA ============ -->
+<div class="page" style="text-align:center;">
+  <div style="font-size:34pt; font-weight:bold; letter-spacing:2px; margin-top:14mm;">EXCALIBUR</div>
+  <div class="fig" style="margin-top:16mm;"><img src="img/x-000.png" style="width:118mm;"></div>
+  <div style="font-size:26pt; font-weight:bold; letter-spacing:1px; margin-top:16mm;">KSIĘGA ZASAD</div>
+</div>
+
+<!-- ============ STRONA 2 ============ -->
+<div class="page">
+  <div class="sec">
+    <h2>1. CELE GRY</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Gracze wcielają się w znamienitych Rycerzy Okrągłego Stołu, którzy starają się dowieść królowi Arturowi, że to właśnie oni najbardziej zasługują na godność namiestnika świeżo podbitych ziem.</p>
+        <p>Gra polega na zajmowaniu włości (i staraniach, by je utrzymać), ulepszaniu ich przez stawianie uli i młyna wodnego, najmowanie włodarzy itd., tak aby przynosiły wyższy dochód — a dzięki temu na budowaniu pocztu rycerzy i zbrojnych, którym można powiększać swój stan posiadania.</p>
+        <p>Choć strategia wojskowa jest ważna (współbracia rycerze chętniej ustępują ze swych ziem, gdy pokaże im się odpowiednią siłę!), to właśnie równowaga między gospodarką a wojskiem jest kluczem do zwycięstwa.</p>
+      </div>
+      <div class="col">
+        <p>Zasady podzielone są na trzy części:</p>
+        <p class="hang"><span class="lbl">A&nbsp;&nbsp;Zasady podstawowe i warunki zwycięstwa:</span> szybka i prosta wersja gry, przeznaczona na pierwszą rozgrywkę oraz na każdą partię, gdy czasu jest niewiele.</p>
+        <p class="hang"><span class="lbl">B&nbsp;&nbsp;Zasady opcjonalne:</span> można ich używać zarówno z grą podstawową, jak i zaawansowaną. Dodają reguły pogody, zamków, najazdów, rzutów losu itd.</p>
+        <p class="hang"><span class="lbl">C&nbsp;&nbsp;Zasady zaawansowane:</span> wprowadzają budowę kościołów i kręgów kamiennych, wizyty króla Artura oraz Punkty Czci.</p>
+        <p>W całych zasadach dowódca twoich sił — Rycerz Okrągłego Stołu — nazywany jest lordem, dla odróżnienia od pozostałych rycerzy w twoich oddziałach.</p>
+      </div>
+    </div>
+  </div>
+  <div class="fig">
+    <img src="img/x-001.png" style="width:118mm;">
+    <div class="cap">Objaśnienia legendy (od góry): jednostka pola ornego &middot; jednostka lasu &middot; jednostka pastwiska &middot; granica włości &middot; kamień milowy &middot; wzniesienie &middot; droga &middot; most &middot; przesmyk &middot; dwór &middot; rzeka.</div>
+  </div>
+  <div class="sec">
+    <h2>PLANSZA DO GRY</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Plansza przedstawia żyzną dolinę gdzieś w głębi wiejskiej Brytanii czasów Artura. Na początku gry nie ma ona namiestnika. Ziemia podzielona jest na włości.</p>
+        <p>Typowa włość obejmuje wieś, kilka jednostek pól ornych uprawianych przez chłopów dla siebie i swego pana oraz jednostki pastwisk lub lasu. Większość włości ma cztery jednostki ziemi, ale niektóre mają ich więcej albo posiadają prawa do rzeki na swojej granicy. Dlatego jedne włości są cenniejsze od innych, a pogoda wpływa na różne rodzaje ziemi w różny sposób (zob. Zasady opcjonalne).</p>
+      </div>
+      <div class="col">
+        <p>Włości łączą drogi, którymi twoje oddziały niosą sąsiadom twe mądre i sprawiedliwe rządy. Wzdłuż dróg rozstawione są kamienie milowe, którymi mierzy się ruch. Środek włości zawsze leży o milę od najbliższych kamieni milowych. Gdzieś we włości stoi dom większy od pozostałych — to dwór. Innymi elementami doliny są rzeka i przecinające ją mosty oraz obszary wzniesień.</p>
+        <p>Na planszy znajdują się też opactwo Carse i przeorat Bestly — dwa niezależne, lecz bogate zgromadzenia zakonne.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">2</div>
+</div>
+
+<!-- ============ STRONA 3 : CYTAT + SPIS TREŚCI ============ -->
+<div class="page">
+  <p class="q">„Wtedy Artur uczynił sir Kaya seneszalem Anglii; sir Baudwin z Brytanii został konetablem, sir Ulfius szambelanem, a sir Brastias namiestnikiem, by strzegł północy od rzeki Trent, tam bowiem podówczas przebywała większość wrogów króla. Lecz w ciągu niewielu lat Artur zdobył całą północ, Szkocję i wszystkie ziemie jej posłuszne. Także Walię, której część stawiała Arturowi opór; ale pokonał ich wszystkich, jak i resztę, dzięki szlachetnemu męstwu swemu i swych rycerzy Okrągłego Stołu”</p>
+  <p class="att">Morte d'Arthur. Sir Thomas Malory. Księga 1, rozdział vii.</p>
+  <p>Oto wyzwanie. Król potrzebuje dobrych namiestników, by doglądali świeżo podbitych ziem. Są tu bogate pastwiska, łany zboża, chłodne, ciemne lasy pełne jeleni, dzików i drewna, rzeki obfitujące w ryby, włości, wsie, kościoły, zamki — całe bogactwo dawnej Brytanii może być twoje. Wystarczy wykazać się twardą ręką i kwitnącym majątkiem. No i ostrym mieczem, rzecz jasna: w Brytanii Artura nie ma prawników, do których można by się zwrócić. Masz zatarg z sąsiadem? Załatwiasz go — osobiście. Ale tę błyszczącą nagrodę zdobędzie tylko ten, kto zrozumie subtelną więź między ziemią, tymi, którzy ją uprawiają, i tymi, którzy ją dzierżą. Umiejętność wykorzystania gospodarki feudalnej i wyciśnięcia z włości jak najwyższego dochodu będzie równie ważna jak taktyka bitewna. Nie licz na szybkie zwycięstwo. Excalibur zdobędzie ten gracz, który najlepiej gospodarując zasobami stworzy najskuteczniejszą strategię na przestrzeni kampanii trwających kilka lat.</p>
+  <div style="margin-top:2.2em;">
+    <table class="toc">
+      <tr><td colspan="3">SPIS TREŚCI</td></tr>
+      <tr><td class="n">1.</td><td>Cele gry i plansza do gry.</td><td class="pg">3</td></tr>
+      <tr><td colspan="3">A. GRA PODSTAWOWA</td></tr>
+      <tr><td class="n">2.</td><td>Warunki zwycięstwa</td><td class="pg">4</td></tr>
+      <tr><td class="n">3.</td><td>Rozpoczęcie gry.</td><td class="pg"></td></tr>
+      <tr><td class="n">4.</td><td>Czas gry.</td><td class="pg">5</td></tr>
+      <tr><td class="n">5.</td><td>Włość.</td><td class="pg">6</td></tr>
+      <tr><td class="n">6.</td><td>Ruch.</td><td class="pg"></td></tr>
+      <tr><td class="n">7.</td><td>Oddziały i ich rodzaje.</td><td class="pg">9</td></tr>
+      <tr><td class="n">8.</td><td>Walka.</td><td class="pg">9</td></tr>
+      <tr><td class="n">9.</td><td>Opactwo i przeorat.</td><td class="pg">12</td></tr>
+      <tr><td class="n">10.</td><td>Śmierć lorda.</td><td class="pg"></td></tr>
+      <tr><td class="n">11.</td><td>Opłacanie pocztu.</td><td class="pg">12</td></tr>
+      <tr><td class="n">B.</td><td>ZASADY OPCJONALNE</td><td class="pg"></td></tr>
+      <tr><td class="n">12.</td><td>Pogoda.</td><td class="pg">13</td></tr>
+      <tr><td class="n">13.</td><td>Dwory i zamki.</td><td class="pg">13</td></tr>
+      <tr><td class="n">14.</td><td>Plądrowanie.</td><td class="pg">14</td></tr>
+      <tr><td class="n">15.</td><td>Rzuty losu.</td><td class="pg">14</td></tr>
+      <tr><td class="n">16.</td><td>Wycena majątku.</td><td class="pg">14</td></tr>
+      <tr><td class="n">C.</td><td>ZASADY ZAAWANSOWANE</td><td class="pg"></td></tr>
+      <tr><td class="n">17.</td><td>Warunki zwycięstwa.</td><td class="pg">15</td></tr>
+      <tr><td class="n">18.</td><td>Religia.</td><td class="pg">15</td></tr>
+      <tr><td class="n">19.</td><td>Kościoły.</td><td class="pg">15</td></tr>
+      <tr><td class="n">20.</td><td>Kręgi kamienne.</td><td class="pg">16</td></tr>
+      <tr><td class="n">21.</td><td>Inspekcje króla Artura.</td><td class="pg">16</td></tr>
+      <tr><td class="n">22.</td><td>Punkty Czci.</td><td class="pg">16</td></tr>
+      <tr><td colspan="3">DODATEK</td></tr>
+      <tr><td class="n">23.</td><td>Społeczeństwo niewolników?</td><td class="pg">17</td></tr>
+      <tr><td class="n">24.</td><td>Notatki projektanta i twórcy.</td><td class="pg">18</td></tr>
+      <tr><td class="n">25.</td><td>Tabela rzutów losu i karta rozkazów.</td><td class="pg">20</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ============ STRONA 4 ============ -->
+<div class="page">
+  <div class="bighead">A. GRA PODSTAWOWA</div>
+  <p class="q">„Muszę tedy stanąć do bitwy — rzekł sir Lancelot... I tak rozstali się jeden z drugim. A potem obie strony gotowały się od rana do bitwy i po obu stronach czyniono wielkie przygotowania; sir Gawaine zaś kazał wielu rycerzom czyhać na sir Lancelota, by go powalić i zabić”</p>
+  <p class="att">Morte D'Arthur. Księga xx, rozdział 10.</p>
+  <div class="sec">
+    <h2>2. WARUNKI ZWYCIĘSTWA</h2>
+    <p>Zwycięzcą zostaje gracz, który na koniec dowolnej pory kampanii (wiosny, lata lub jesieni) posiada więcej niż połowę włości na planszy (21).<br>
+    W grze dwuosobowej gracz musi posiadać ponad trzy czwarte włości (31).</p>
+    <p>Gra zaawansowana ma inne warunki zwycięstwa, opisane w rozdziale 17.<br>
+    Gracze mogą ustalić limit czasu gry podstawowej, po którym przeprowadza się wycenę majątku wszystkich graczy, by wyłonić zwycięzcę (zob. rozdział 16: Wycena majątku).</p>
+  </div>
+  <div class="sec">
+    <h2>3. ROZPOCZĘCIE GRY</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Ponieważ podstawowe zasady Excalibura są nieskomplikowane, można się ich uczyć w trakcie pierwszej rozgrywki, sprawdzając szczegóły poszczególnych reguł w miarę jak pojawiają się w grze.</p>
+        <p>Najpierw każdy gracz wybiera zestaw żetonów. Weź żeton Rycerza Okrągłego Stołu (sir Gawaine, sir Lionel itd.), jednego rycerza (poziom 6) i dwóch zbrojnych (poziom 3). Każdy gracz wybiera drogę, którą wejdzie na planszę; drogi te powinny leżeć jak najdalej od siebie. Każdy gracz bierze kartkę papieru (lub kserokopię karty rozkazów ze strony 24), pisze „Skarbiec”, a pod spodem wpisuje 11 bezantów (w Brytanii Artura jednostką monetarną jest bezant). Można zaczynać grę.</p>
+        <p>Czas gry dzieli się na pory roku. Gra zaczyna się jesienią: gracze wprowadzają swoje oddziały do pierwszej włości, jaką napotkają na planszy. Na tym kończy się ruch tej pory roku i każdy gracz może teraz uznać tę włość za swój majątek, biorąc jej kartę i kładąc ją przed sobą. Nastał koniec jesieni, czas żniw, można więc pobrać dochód ze swojej włości. W tym celu spójrz na tabelę dochodu na karcie włości. Ponieważ masz we włości rycerza, który zbiera dochód, lecz włość była nienadzorowana (zob. rozdział 5), dochód wyniesie 5 Bz. Dodaj go do skarbca.</p>
+        <p>Nadchodzi zima, dając ci czas na uporządkowanie majątku. Obejmuje to opłacenie oddziałów według stawki 4 Bz rocznie za rycerza i 2 Bz rocznie za zbrojnego. Ponieważ sobie samemu płacić nie musisz, rachunek powinien wyglądać tak:</p>
+      </div>
+      <div class="col">
+        <table class="money">
+          <tr><td></td><td></td><td>Bz</td></tr>
+          <tr><td>1x rycerz</td><td>po 4 Bz</td><td>4,00</td></tr>
+          <tr><td>2x zbrojni</td><td>po 2 Bz</td><td>4,00</td></tr>
+          <tr><td colspan="2">Razem tej zimy..………..</td><td>8,00</td></tr>
+        </table>
+        <p>Odejmij te pieniądze od skarbca (ciężkie jest życie lorda!).<br>
+        To, co zostanie, możesz przeznaczyć na ulepszenie włości, najęcie nowych oddziałów albo jedno i drugie.<br>
+        Na tym etapie warto przeczytać poniższy rozdział o ulepszaniu włości i korzyściach z poszczególnych ulepszeń. Gdy wydasz już skarbiec, a resztę zimy spędzisz na hulankach i swawolach, pory roku dobiegają do wiosny.<br>
+        Od tej chwili gracze muszą przed każdą porą roku pisać rozkazy i starannie planować strategię. Przeczytaj rozdziały o czasie gry (strona 6) oraz o ruchu i pisaniu rozkazów (strona 9).</p>
+        <p>Ponieważ każdy gracz będzie już zapewne miał oprócz lorda co najmniej dwóch rycerzy, najlepiej może być zostawić jednego rycerza (najmłodszego stażem) we włości, by nadzorował zasiewy i tym samym zwiększył jej dochód, a pozostałych wysłać na zdobywanie kolejnych włości. Gracze mogą też chcieć użyć wszystkich rycerzy, by zagarnąć jak najwięcej włości.</p>
+        <p>Teraz gracze muszą przed każdą porą roku pisać rozkazy. Po zapisaniu rozkazów wszyscy gracze wykonują ruch pierwszej fazy. Oddziały różnych stronnictw, które zakończyły fazę w tym samym miejscu, staczają walkę (przeczytaj rozdział 8 o walce). Potem wykonuje się ruch i walki drugiej oraz trzeciej fazy. Tak kończy się wiosna.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">4</div>
+</div>
+
+<!-- ============ STRONA 5 ============ -->
+<div class="page">
+  <div class="sec">
+    <div class="cols">
+      <div class="col">
+        <p>Każdy rycerz, łącznie z lordem, który zakończy porę roku we włości niedzierżonej przez lorda, może ją teraz zająć dla swego pana. Gracz bierze wtedy kartę włości.</p>
+        <p>Każda włość, w której rycerz spędził całą wiosnę bez ruszania się z miejsca, jest „nadzorowana”. Karty włości nadzorowanych trzymaj odkryte, nienadzorowanych — zakryte. Lato i jesień rozgrywa się tak samo, z tym że włość raz nadzorowana wiosną nie wymaga już dalszej opieki, co uwalnia rycerzy do innych zadań. Zadbaj też o to, by na koniec jesieni w każdej włości (w miarę możności) stał rycerz, jeśli chcesz uzyskać najwyższy dochód.</p>
+        <p>Koniec jesieni to żniwa. Oblicz dochody zgodnie z rozdziałem 5 (viii). Pamiętaj, by przy obliczaniu dochodów uwzględnić zarówno rodzaj oddziału, jak i nadzór.</p>
+        <p>Dotarłeś właśnie do drugiej zimy — wykonaj więc czynności zimowe starannie i w podanej kolejności. Po tej zimie gracze powinni mieć więcej włości, lepszy dochód i wyznaczone terytorium, którego można bronić i z którego można się rozrastać. Walk powinno być niewiele — może potyczka lub dwie, ledwie przedsmak tego, co nadejdzie!</p>
+      </div>
+      <div class="col">
+        <p>W tym momencie powinieneś już znać wszystkie podstawowe zasady i mieć niezłe pojęcie, jak grać. Oto kilka wskazówek zebranych podczas testów.</p>
+        <p class="hang">1.&nbsp;&nbsp;&nbsp;Równoważ rozwój gospodarczy i wojskowy. To znaczy: każdej zimy dziel dostępną gotówkę między rozbudowę włości a nowe oddziały. Zwykle to lord, który w okolicach półmetka gry ma najwyższy wolny dochód, ma największe szanse na zwycięstwo, bo co roku może swobodnie wydawać na nowe oddziały.</p>
+        <p class="hang">2.&nbsp;&nbsp;&nbsp;Nie walcz dla samej walki. Uczyń walkę częścią strategii, a nie celem samym w sobie. Planuj ofensywy starannie i wyznaczaj realistyczne cele.</p>
+        <p class="hang">3.&nbsp;&nbsp;&nbsp;Różne włości mają różną wartość. Gdy jesteś pod presją, chroń włości o wysokiej wartości, nawet za cenę porzucenia innych.</p>
+        <p class="hang">4.&nbsp;&nbsp;&nbsp;Skrupulatnie uwzględniaj walory obronne, takie jak przesmyki, mosty itp. Mogą znacznie ułatwić utrzymanie włości albo spowolnić ofensywę przeciwnika na tyle, byś zdążył ściągnąć posiłki.</p>
+        <p class="hang">5.&nbsp;&nbsp;&nbsp;Nie werbuj więcej oddziałów, niż zdołasz opłacić następnej zimy. Brak pieniędzy oznacza brak możliwości.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>4. CZAS GRY</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Excalibur jest nietypowy, bo nie ma w nim tur. Cały ruch i wszystkie działania są jednoczesne, co jest znacznie bardziej realistyczne i daje szybszą, wymagającą większych umiejętności grę.</p>
+        <p><span class="lbl">i. Czas gry:</span> gra dzieli się na pory roku. W trakcie pory roku gracze mogą wykonywać określone działania, a mianowicie:</p>
+        <ul class="plain">
+          <li>WIOSNA: kampania. Nadzór nad włościami.</li>
+          <li>LATO: kampania.</li>
+          <li>JESIEŃ: kampania. Żniwa i dochody.</li>
+          <li class="indent">Oddziały wracają do najbliższej przyjaznej włości.</li>
+          <li>ZIMA: (wykonuj ściśle w tej kolejności)</li>
+          <li class="indent">Zwolnij niechcianych zbrojnych.</li>
+          <li class="indent">Opłać dotychczasowe oddziały.</li>
+          <li class="indent">Ranni żołnierze zdrowieją.</li>
+          <li class="indent">Awansuj młodsze oddziały o jedną klasę.</li>
+          <li class="indent">Najmij nowe oddziały.</li>
+          <li class="indent">Ulepszaj włości, najmuj włodarzy itd.</li>
+          <li class="indent">Przemieść oddziały między włościami.</li>
+        </ul>
+        <p><span class="lbl">ii. Kampania:</span> wiosna, lato i jesień to tzw. pory kampanii. Podstawowy przebieg każdej pory kampanii jest następujący:</p>
+      </div>
+      <div class="col">
+        <p class="hang">1.&nbsp;&nbsp;&nbsp;Wszyscy gracze piszą rozkazy na daną porę roku.</p>
+        <p class="hang">2.&nbsp;&nbsp;&nbsp;Wszyscy gracze wykonują ruch pierwszej fazy. Rozstrzygnij walki.</p>
+        <p class="hang">3.&nbsp;&nbsp;&nbsp;Wszyscy gracze wykonują ruch drugiej fazy. Walka.</p>
+        <p class="hang">4.&nbsp;&nbsp;&nbsp;Wszyscy gracze wykonują ruch trzeciej fazy. Walka.</p>
+        <p class="hang">5.&nbsp;&nbsp;&nbsp;Nowe włości zajęte w tej porze roku zostają przejęte, a ich karty przechodzą do nowych właścicieli.</p>
+        <p><span class="lbl">iii. Zima:</span> zimą gracze wykonują czynności wymienione powyżej w podanej kolejności. Na początku zimy każdy gracz musi ogłosić wszystkim pozostałym swój dochód brutto oraz dochód netto po opłaceniu oddziałów. Jeśli gracz nie może opłacić swoich oddziałów, musi wykonać rzuty lojalności opisane w rozdziale 11.</p>
+        <p>Gdy gracze dojdą do punktu „Przemieść oddziały”, jako pierwszy przemieszcza oddziały i włodarzy gracz o najwyższym dochodzie brutto z tej jesieni, i tak dalej w dół kolejności. Jeśli włość nie ma bezpośredniego połączenia drogą z innymi włościami danego gracza, oddziałów w niej stojących nie można przemieszczać.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">5</div>
+</div>
+
+<!-- ============ STRONA 6 ============ -->
+<div class="page">
+  <h2>5. WŁOŚĆ</h2>
+  <div class="cols">
+    <div class="col">
+      <p class="q">„Zacny człeku — rzekł sir Ector — znaszli w tym kraju jakoweś przygody tu w pobliżu? Panie — odparł leśniczy — kraj ten znam dobrze, a niedaleko, w obrębie mili, stoi warowna włość, dobrze umocniona fosą; a przy tej włości, po lewej ręce, jest piękny bród, gdzie koń pić może, a nad brodem rośnie piękne drzewo, na którym wisi wiele pięknych tarcz, co je nosili niegdyś dobrzy rycerze...”</p>
+      <p class="att">Le Morte D'Arthur. Księga 6, rozdział i.</p>
+      <p>Excalibur to gra o posiadaniu i rozwijaniu włości. Z ziemi bierze się żywność i dochód, z dochodu — poczet, z pocztu — bezpieczeństwo majątku i możliwość zdobycia kolejnej ziemi... i tak dalej.</p>
+      <p><span class="lbl">i. Posiadanie włości:</span> gracz może objąć włość w posiadanie, gdy jeden z jego rycerzy zakończy porę roku w niekwestionowanym władaniu środkiem włości. Gracz może wtedy wziąć kartę włości i we właściwych porach zbierać dochody, jakie ta włość przynosi.<br>
+      Dochody zależą jednak od kilku czynników. Na każdej karcie włości są dwie kolumny dochodu:</p>
+      <p>„Nadzorowana” i „Nienadzorowana”, wraz z rodzajem oddziału, który jesienią zbiera daniny. Np. we włości Foxwood, jeśli była ona nadzorowana wiosną, a daniny zbiera jesienią rycerz (to znaczy: na koniec jesieni na środku włości stoi rycerz), zebrany dochód wyniesie 1 Bz.</p>
+      <p>Jeżeli włość nie była wiosną nadzorowana, a na koniec jesieni nie ma w niej nikogo, kto zebrałby daniny, wówczas złodziejscy, kłamliwi chłopi zasłonią się nieurodzajem, najazdami zza rzeki i chmarami szarańczy w swych sprzedajnych wymówkach, byle tylko uniknąć powinności — i oddadzą cesarzowi ledwie 1 Bz. Dobrze ci tak. Chcesz pieniędzy, to na nie zapracuj!</p>
+    </div>
+    <div class="col">
+      <p>W rzadkim przypadku, gdy na koniec pory roku we włości przebywa dwóch rycerzy, obowiązuje następujący protokół:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Jeśli w tej porze roku nie było walki, włość zachowuje lord, który dzierżył ją na początku tej pory.</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Jeśli w tej porze roku doszło do walki, panowanie nad włością może objąć zwycięzca ostatniej walki.</p>
+      <p><span class="lbl">ii. Jednostki ziemi:</span> każda włość składa się z jednostek ziemi opisanych na karcie oraz ewentualnych praw do rzeki, jeśli je wymieniono. Rodzaje jednostek ziemi to: pole orne, pastwisko do wypasu i las. Na planszy zamyka je granica włości.</p>
+      <p><span class="lbl">iii. Dochód:</span> każda włość ma dochód, który na koniec jesieni odda swojemu panu.</p>
+      <p><span class="lbl">iv. Nadzór nad włościami:</span> włość jest nadzorowana, jeśli rycerz (lub lord) zaczyna i kończy wiosnę na środku włości. W tym czasie pilnuje, by chłopi uprawiali jego ziemię, a nie tylko własną, dogląda żywego inwentarza, dbając o udany sezon rozpłodowy, i wykonuje mniejsze i większe prace organizacyjne, by zapewnić dobre żniwa jesienią.<br>
+      Krótko mówiąc: przykłada szlachetny miecz do chłopskiego zadka w przepisowy sposób. To zwiększa dochód.<br>
+      Na koniec wiosny ułóż karty włości tak: nadzorowane odkryte, nienadzorowane zakryte. Trzymaj je tak do jesieni. Gdy włość zmienia właściciela w ciągu roku, zachowuje swój status, tj. nadzorowana lub nienadzorowana.</p>
+      <p><span class="lbl">v. Ulepszanie włości:</span> zimą lord może wydawać gotówkę na ulepszanie swojej włości. Choć to kosztowne, ulepszenia przynoszą zwiększony dochód przez wiele kolejnych lat. Ulepszenia to:</p>
+    </div>
+  </div>
+  <div class="fig" style="margin-top:0.3em;">
+    <img src="img/x-002.png" style="height:36mm; vertical-align:bottom;">
+    <img src="img/x-003.png" style="height:40mm; vertical-align:bottom;">
+    <div class="cap">KARTA WŁOŚCI — objaśnienia: Manor Name = nazwa włości &middot; Map reference of manor = oznaczenie włości na mapie &middot; Unsupervised / Supervised Income = dochód bez nadzoru / pod nadzorem &middot; Collector = poborca (Knight = rycerz, Man-at-arms = zbrojny, No-one = nikt) &middot; Land Units = jednostki ziemi (Forest = las, Pasture = pastwisko, Strip fields = pola orne, River rights = prawa do rzeki).</div>
+  </div>
+  <div class="pgnum">6</div>
+</div>
+
+<!-- ============ STRONA 7 ============ -->
+<div class="page">
+  <table class="rules" style="margin-top:2mm;">
+    <tr><th style="width:16%;">ULEPSZENIE</th><th style="width:34%;">OPIS</th><th style="width:8%;">KOSZT</th><th style="width:18%;">KORZYŚĆ</th><th style="width:24%;">UWAGI</th></tr>
+    <tr>
+      <td><b>ULE</b></td>
+      <td>Dostarczają miodu i wosku. Niezbędne w gospodarce feudalnej. Umieść na pastwisku. Limit: 1 na jednostkę.</td>
+      <td class="c">2 Bz</td>
+      <td>Dochód 1 Bz rocznie z każdego ula.</td>
+      <td>Podlega efektom pogody.</td>
+    </tr>
+    <tr>
+      <td><b>LEŚNICZY</b></td>
+      <td>Zwiększy dochód z lasu dzięki przecince, opiece nad zwierzyną i właściwemu pozyskiwaniu drewna. Umieść na lesie. Limit: 1 leśniczy na jednostkę.</td>
+      <td class="c">2 Bz</td>
+      <td>Dochód 1 Bz rocznie z jednostki.</td>
+      <td>Bez efektów pogody.</td>
+    </tr>
+    <tr>
+      <td><b>WŁODARZ RZECZNY</b></td>
+      <td>Wytworzy dochód z praw do rzeki, jakie może mieć włość, chroniąc łowiska, trzcinę na strzechy itp.</td>
+      <td class="c">2 Bz</td>
+      <td>Dochód 1 Bz rocznie z praw do rzeki.</td>
+      <td>Można umieszczać tylko we włościach z prawami do rzeki. Dochód podlega efektom pogody.</td>
+    </tr>
+    <tr>
+      <td><b>MŁYN WODNY</b></td>
+      <td>Przynosi lordowi dochód z przemiału całego zboża z posiadanych przez niego włości.</td>
+      <td class="c">15 Bz</td>
+      <td>1 Bz rocznie za każdą posiadaną włość.</td>
+      <td>Tylko 1 młyn na lorda (nie da się zemleć ich zboża dwa razy!).</td>
+    </tr>
+  </table>
+  <div class="cols" style="margin-top:8mm;">
+    <div class="col">
+      <p><span class="lbl">vi. Wykonanie ulepszenia:</span> w odpowiednim momencie zimy połóż żeton na jednostce ziemi — lub przy rzece w przypadku włodarza rzecznego — i odejmij pieniądze od skarbca. Od najbliższej jesieni i w każdą kolejną jesień ulepszenie to będzie przynosić dodatkowy dochód, jak podano wyżej, z zastrzeżeniem pogody, plądrowania i innych istotnych czynników. Uwaga: młyn wodny można zbudować tylko we włości z prawami do rzeki. Połóż żeton na jednostce ziemi przylegającej do rzeki.</p>
+      <p><span class="lbl">vii. Przenosiny:</span> gracze mogą zimą przenosić swoją służbę razem z przemieszczaniem oddziałów. Budynków przenosić nie można.</p>
+      <p><span class="lbl">viii. Obliczanie dochodów:</span> na koniec jesieni dochody oblicza się następująco:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Weź każdą kartę włości i policz dochód podstawowy według stanu nadzoru oraz rodzaju oddziału zbierającego dochód.</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Dodaj lub odejmij zgodnie z wierszem „Pola orne” tabeli pogody (tylko jeśli grasz z zasadami pogody!).</p>
+      <p class="hang">(c)&nbsp;&nbsp;&nbsp;Dodaj dochód z uli, leśniczych i rzeki. Odejmij 1 Bz za każdy znacznik dymu na jednostce ornej powstały wskutek plądrowania.</p>
+      <p class="hang">(d)&nbsp;&nbsp;&nbsp;Skoryguj zgodnie z wierszami „Rzeka” i „Pszczoły” tabeli pogody.</p>
+    </div>
+    <div class="col">
+      <div class="fig" style="margin-top:0;">
+        <img src="img/x-004.png" style="width:56mm;">
+        <div class="cap">ŻETONY WŁOŚCI: Beehives = ule &middot; Forester = leśniczy &middot; River Reeve = włodarz rzeczny &middot; Water Mill = młyn wodny &middot; Church* = kościół &middot; Castle* = zamek &middot; Stone Circle* = krąg kamienny (*tylko zasady zaawansowane i opcjonalne). Żetony do zasad opcjonalnych: Weather = pogoda &middot; Smoke = dym &middot; King Arthur = król Artur. Używaj ich na torach na karcie.</div>
+      </div>
+      <p class="hang">(e)&nbsp;&nbsp;&nbsp;Pobierz dochód 1 Bz za każdą włość, jeśli posiadasz młyn wodny.</p>
+      <p class="hang">(f)&nbsp;&nbsp;&nbsp;Zsumuj wszystko. To twój dochód za ten rok.</p>
+    </div>
+  </div>
+  <div class="pgnum">7</div>
+</div>
+
+<!-- ============ STRONA 8 ============ -->
+<div class="page">
+  <h2>6. RUCH</h2>
+  <p class="q">„Wysłano tedy przodem jeźdźców, by przetrząsnęli kraj, a ci napotkali jeźdźców z północy i zmusili ich, by wyjawili, którędy nadciąga wojsko; a potem powiedzieli to Arturowi, ten zaś za radą królów Bana i Borsa kazał palić i niszczyć cały kraj przed sobą, tam którędy mieli jechać.”</p>
+  <p class="att">Morte D'Arthur. Księga i, rozdział 13.</p>
+  <div class="cols">
+    <div class="col">
+      <p>Choć inni mogą swobodnie podróżować między włościami, a handel i wędrówki między twoim majątkiem a majątkiem sąsiada to rzecz codzienna, ruch oddziałów jest deklaracją zamiarów wojskowych i stanowi rozszerzenie twoich wpływów w takim samym stopniu, jak faktyczne przemieszczenie w terenie.</p>
+      <p><span class="lbl">i. Zasięg ruchu:</span> oddziały mogą przebyć do sześciu mil na porę roku. Odległość mierzy się kamieniami milowymi przy drodze. Środek każdej włości również stanowi milowy punkt pomiaru.</p>
+      <p><span class="lbl">ii. Fazy ruchu:</span> ruch dzieli się na trzy fazy po dwie mile każda. Oddziały, które spotkają się w trakcie fazy, stoczą walkę na końcu tej fazy, a przed następną fazą ruchu.</p>
+      <p><span class="lbl">iii. Limity oddziałów:</span> gracz może mieć jednocześnie najwyżej sześć oddziałów na danym kamieniu milowym lub pozycji.</p>
+      <p><span class="lbl">iv. Pisanie rozkazów:</span> przed każdą porą roku gracze planują ruchy oddziałów i je zapisują. Oddziały muszą wykonywać zapisane rozkazy przez całą porę roku, z wyjątkiem sytuacji po walce (zob. Walka poniżej).</p>
+      <p>Do pisania rozkazów używaj numerów identyfikacyjnych z żetonów oddziałów i nazw włości. Pisz rozkazy czytelnie na wypadek sporu. Oddziały, dla których nie zapisano rozkazów, muszą w nadchodzącej porze roku stać w miejscu; mogą jednak stoczyć walkę, jeśli zostaną zaatakowane, i mogą poruszyć się po walce, jak opisano niżej.</p>
+      <p>Np. jeśli gracz mający dwóch rycerzy (numery 13 i 17) w Barsham chce zająć włość Hazlemere, zapisane rozkazy będą wyglądać tak:</p>
+      <div class="fig" style="text-align:left; margin:0.4em 0;"><img src="img/x-006.png" style="width:44mm;"></div>
+      <p>Ponieważ odległość wynosi 4 mile, rozkaz ten zostałby wykonany do końca fazy 2. W fazie 3 rycerze siedzieliby po prostu na miejscu, wygrzewając się w słońcu i łypiąc na wiejskie dziewczęta, nim na koniec pory roku zajmą włość dla swego lorda.</p>
+      <p><span class="lbl">v. Fazy w rozkazach:</span> gracze mogą przy pisaniu rozkazów zaznaczyć, w których fazach oddziały mają się</p>
+    </div>
+    <div class="col">
+      <p>poruszać. Na przykład w powyższym przykładzie można było zapisać ruch w fazach 2 i 3, gdybyś chciał o jedną fazę opóźnić wymarsz oddziałów z Barsham. Można też było zapisać ruch w fazach 1 i 3.</p>
+      <p><span class="lbl">vi. Ruch po walce — oddziały zwycięskie:</span> oddziały muszą wykonywać zapisane rozkazy, chyba że stoczą walkę. Po walce zwycięskie oddziały mają następujące możliwości:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Mogą kontynuować zapisane rozkazy do końca pory roku.</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Mogą pozostać na miejscu walki do końca pory roku.</p>
+      <p class="hang">(c)&nbsp;&nbsp;&nbsp;Mogą wracać w stronę pozycji wyjściowej w normalnym tempie ruchu.</p>
+      <p><span class="lbl">vii. Ruch po walce — oddziały pokonane:</span> oddziały pokonane oraz te, które zdecydowały się wycofać z walki, muszą odstąpić o jedną milę od miejsca starcia. W kolejnych fazach mogą:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Wycofywać się ku pozycji wyjściowej w tempie 2 mil na fazę.</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Wycofywać się ku przyjaznej włości.</p>
+      <p>Jeżeli odwrót wycofującej się siły opisany powyżej przekroczyłby limit liczebności na kamieniu milowym, wówczas oddziały już stojące na kamieniu, ku któremu kieruje się odwrót, muszą same cofnąć się na poprzedni kamień, by pomieścić wycofujące się oddziały bez przekraczania limitu. Jeśli wszystkie wyjścia z kamienia milowego, na którym toczyła się walka, są zablokowane przez oddziały wroga, wycofujące się oddziały odchodzą w kierunku wyznaczonym losowym rzutem kością.</p>
+      <p><span class="lbl">viii. Spotkanie oddziałów między kamieniami milowymi:</span> gdy spotkają się oddziały wrogich stronnictw wyruszające z sąsiednich kamieni milowych, walka odbywa się między kamieniami. Po zakończeniu walki wszystkie oddziały znajdą się na tym kamieniu, z którego pokonane oddziały zaczynały fazę — tzn. pokonane oddziały zostają odepchnięte do punktu wyjścia.</p>
+      <p><span class="lbl">ix. Oddziały na koniec jesieni:</span> na koniec jesieni wszystkie oddziały wracają do najbliższej przyjaznej włości.</p>
+    </div>
+  </div>
+  <div class="pgnum">8</div>
+</div>
+
+<!-- ============ STRONA 9 ============ -->
+<div class="page">
+  <h2>7. ODDZIAŁY I ICH RODZAJE</h2>
+  <div class="cols">
+    <div class="col">
+      <p><span class="lbl">i. Rodzaje oddziałów:</span> na planszy występują trzy rodzaje żołnierzy: lord, rycerze i zbrojni. Gracz może mieć na planszy tylko jednego lorda naraz; poza tym skład sił zależy całkowicie od uznania gracza.</p>
+      <p><span class="lbl">ii. Klasa oddziału:</span> każdy rodzaj oddziału ma klasę odzwierciedlającą jego doświadczenie i umiejętności bojowe oraz koszt utrzymania, płacony co roku zimą.</p>
+    </div>
+    <div class="col">
+      <div class="fig" style="margin-top:0;">
+        <img src="img/x-007.png" style="width:58mm;">
+        <div class="cap">ŻETON LORDA: Combat Strength = siła bojowa &middot; Lord's Name = imię lorda &middot; Identity Number = numer identyfikacyjny.</div>
+      </div>
+    </div>
+  </div>
+  <table class="rules" style="width:80%; margin:0.4em auto 0.9em;">
+    <tr><th>RODZAJ ODDZIAŁU</th><th>KLASA A<br>siła bojowa</th><th>KLASA B<br>siła bojowa</th><th>GIERMEK<br>siła bojowa</th><th>KOSZT/ROK w Bz<br>(i koszt najmu)</th></tr>
+    <tr><td>Lord</td><td class="c">8 (5)</td><td class="c">-</td><td class="c">-</td><td class="c">-</td></tr>
+    <tr><td>Rycerz</td><td class="c">6 (4)</td><td class="c">5 (3)</td><td class="c">4 (2)</td><td class="c">4</td></tr>
+    <tr><td>Zbrojny</td><td class="c">3 (1)</td><td class="c">2 (1)</td><td class="c">-</td><td class="c">2</td></tr>
+    <tr><td colspan="5" style="font-size:7.8pt;">* Liczby w nawiasach to wartości po zranieniu.</td></tr>
+  </table>
+  <div class="cols">
+    <div class="col">
+      <p><span class="lbl">iii. Siła bojowa:</span> na każdym żetonie widnieją dwie liczby. W lewym górnym rogu jest siła bojowa — zawsze jednocyfrowa. W prawym górnym rogu jest numer identyfikacyjny — dwucyfrowy.<br>
+      Gdy żołnierz odniesie ranę, odwróć żeton na stronę rannego, o niższej sile bojowej (ale z tym samym numerem!).</p>
+      <p><span class="lbl">iv. Najmowanie i awans oddziałów:</span> aby nająć oddziały (tylko zimą), zapłać koszt roczny, weź żeton i umieść go w dowolnej włości należącej do gracza. Oddziały werbuje się na najniższym poziomie, np. rycerz zaczyna jako giermek o SB 4. Następnej zimy zostanie awansowany na rycerza klasy B itd.<br>
+      Zbrojnych można zwolnić ze służby na początku zimy, przed opłaceniem oddziałów, ale rycerzy nie wolno zwolnić ze służby nigdy! Jeśli gracz nie może im zapłacić na początku zimy, wszystkie oddziały wykonują rzut lojalności, jak opisano w rozdziale 11.</p>
+    </div>
+    <div class="col">
+      <div class="fig" style="margin-top:0;">
+        <img src="img/x-009.png" style="width:58mm;">
+        <div class="cap">Żetony rycerzy (Grade A Knight = rycerz klasy A, Grade B Knight = rycerz klasy B, Esquire = giermek) oraz żetony zbrojnych (Grade A / Grade B = zbrojny klasy A / B).</div>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>8. WALKA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Oddziały wrogich stronnictw, które na koniec fazy zajmują ten sam kamień milowy lub środek włości, mogą stoczyć walkę. Do walki dochodzi, jeśli chce jej którakolwiek ze stron. Walki można uniknąć, jeśli obie strony sobie tego życzą.</p>
+        <p><span class="lbl">i. Rundy walki:</span> walkę toczy się w rundach. Po dwóch rundach — i po każdej kolejnej — każda ze stron może wycofać się ze starcia, stosując zasady ruchu z rozdziału 6. Jeśli po rundzie obie strony zdecydują się wycofać, obie postępują według wskazówek dla oddziałów pokonanych.</p>
+        <p><span class="lbl">ii. Wyniki walki:</span> wynik rundy walki rozstrzyga się następująco:</p>
+      </div>
+      <div class="col">
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;Każdy gracz sumuje siłę bojową swoich oddziałów, rzuca kością i dodaje wynik. Daje to Wartość Ataku (WA) każdej ze stron.</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Porównaj Wartości Ataku. Wyższa WA staje się stroną silniejszą, niższa WA — stroną słabszą.</p>
+        <p class="hang">(c)&nbsp;&nbsp;&nbsp;Korzystając z różnicy Wartości Ataku, odczytaj wynik dla każdej ze stron z poniższych tabel.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">9</div>
+</div>
+
+<!-- ============ STRONA 10 ============ -->
+<div class="page">
+  <div class="cols">
+    <div class="col">
+      <table class="rules" style="margin-bottom:0.5em;">
+        <tr><th>Różnica Wartości Ataku</th><th>Wynik strony słabszej</th><th>Wynik strony silniejszej</th></tr>
+        <tr><td class="c">0</td><td>1 rana przy rzucie 6*</td><td>1 rana przy rzucie 6*</td></tr>
+        <tr><td class="c">1</td><td>1 rana przy rzucie 5 lub 6*</td><td>1 rana przy rzucie 6*</td></tr>
+        <tr><td class="c">2-4</td><td>1 rana przy rzucie 3-6*</td><td>1 rana przy rzucie 5 lub 6*</td></tr>
+        <tr><td class="c">5-9</td><td>1 rana.</td><td>.......jak wyżej.......</td></tr>
+        <tr><td class="c">10-16</td><td>2 rany.</td><td>.......jak wyżej.......</td></tr>
+        <tr><td class="c">16+</td><td>3 rany.</td><td>rana przy rzucie 6*</td></tr>
+        <tr><td colspan="3" style="font-size:7.8pt;">* Gracz rzuca kością, by ustalić wynik.</td></tr>
+      </table>
+      <p style="font-weight:bold; font-style:italic;">TABELA WYNIKÓW WALKI</p>
+      <p><span class="lbl">iii. Rany:</span> rany przydziela się oddziałom następująco:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Rany odniesione w rundzie walki należy rozdzielić między oddziały możliwie równomiernie.</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Rany odniesione w kolejnych rundach należy w miarę możliwości przydzielać oddziałom już rannym.</p>
+      <p class="hang">(c)&nbsp;&nbsp;&nbsp;Gdy żołnierz zostanie ranny, odwróć jego żeton i w następnej rundzie uwzględniaj obniżoną siłę bojową w obliczeniu Wartości Ataku.</p>
+      <p class="hang">(d)&nbsp;&nbsp;&nbsp;Jeśli ranny żołnierz odniesie drugą ranę, ginie i zostaje zdjęty z planszy.</p>
+      <p class="hang">(e)&nbsp;&nbsp;&nbsp;Rany goją się zimą.</p>
+      <p><span class="lbl">iv. Przesmyki:</span> pewne odcinki dróg o ograniczonym dostępie z boków nazywamy przesmykami. Przesmyki to: mosty, odcinki dróg z lasem po obu stronach oraz odcinki dróg biegnące przez urwiste zbocze. Na przesmyku w walce może jednocześnie uczestniczyć tylko dwóch żołnierzy z każdej strony. Oznacza to, że np. mostu może bronić przed liczebnie przeważającą siłą zaledwie dwóch żołnierzy. Protokół na przesmykach jest następujący:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Gdy na przesmyku dochodzi do walki, każdy gracz wybiera dwóch żołnierzy do boju.</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Ta dwójka walczy według normalnych zasad walki.</p>
+      <p class="hang">(c)&nbsp;&nbsp;&nbsp;Żołnierzy nie wolno wymieniać, chyba że jeden z walczących zginie.</p>
+    </div>
+    <div class="col">
+      <p class="hang">(d)&nbsp;&nbsp;&nbsp;Każda ze stron może po dwóch rundach zdecydować się wycofać całą siłę z kamienia milowego w zwykły sposób.</p>
+      <p><span class="lbl">v. Walka wielostronna:</span> jeśli w fazie ruchu więcej niż dwóch graczy wprowadzi siły na tę samą pozycję, wskazując tym samym walkę trójstronną, protokół jest następujący:</p>
+      <p class="hang">(a)&nbsp;&nbsp;&nbsp;Dwie pierwsze siły, które dotrą na pozycję, walczą najpierw; ostatni przybyły zmierzy się ze zwycięzcą!</p>
+      <p class="hang">(b)&nbsp;&nbsp;&nbsp;Jeśli wszyscy przybędą jednocześnie, wszyscy rzucają kością: najniższe wyniki walczą pierwsze, najwyższy wynik walczy ze zwycięzcą.</p>
+      <p><span class="lbl">vi. Przykłady walki</span></p>
+      <p>1. Rycerz klasy A (siła bojowa 6) spotyka rycerza klasy B (SB 5) z wrogiego stronnictwa przy samotnym słupie milowym na kompletnym odludziu. (Nie, też nie wiem, co oni tam robili).</p>
+      <p>Postanawiają walczyć. A wyrzuca 4, dodaje to do swojej siły bojowej 6 i uzyskuje Wartość Ataku 10.</p>
+      <p>B wyrzuca 2 i dodaje swoją siłę bojową 5, uzyskując Wartość Ataku 7.<br>
+      Oznacza to, że w tej rundzie walki A jest stroną silniejszą, a B słabszą.</p>
+      <p>Patrząc w tabelę wyników walki widzimy, że przy różnicy WA równej 3 obaj muszą rzucić kością, by ustalić wynik. Jeśli B wyrzuci 3, 4, 5 lub 6, zostanie ranny. A będzie ranny tylko przy rzucie 5 lub 6.</p>
+      <p>Obaj rzucają. A wyrzuca 4 (bez rany). B wyrzuca 3 i jest ranny. Żeton B zostaje odwrócony na stronę rannego. Na początku drugiej rundy sytuacja wygląda tak:</p>
+      <p>Położenie B nie wygląda zbyt dobrze, ale nie może się on wycofać przed końcem dwóch rund walki.</p>
+      <p>W drugiej rundzie A wyrzuca 2 i dodaje to do swojej SB 6, uzyskując WA 8. B wyrzuca 5 i dodaje do swojej rannej SB 3, uzyskując również WA 8. Skoro nie ma strony silniejszej ani słabszej, obaj rzucają kością.</p>
+      <p>A wyrzuca 2 (bez rany), lecz B wyrzuca 6, odnosi drugą ranę, pada i ginie.</p>
+      <p>Morał: jeśli wybierasz się na popijawę do karczm blisko wrogiego terytorium, dopilnuj, by rzucać wysoko.</p>
+    </div>
+  </div>
+  <div class="pgnum">10</div>
+</div>
+
+<!-- ============ STRONA 11 ============ -->
+<div class="page">
+  <p>2. Gracz A (Lancelot) z oddziałami w Breaume oraz gracz B (Gawaine), właściciel Fletcham, stoją na koniec wiosny tak, jak pokazano obok. Obaj mają oko na Foxwood, które jest ważnym punktem wejścia do środka planszy, a do tego ma prawa do rzeki.</p>
+  <div class="cols">
+    <div class="col">
+      <p>Lancelot pisze rozkazy tak:</p>
+      <table class="money">
+        <tr><td>Oddziały</td><td>Skąd</td><td>Dokąd</td></tr>
+        <tr><td>17,10,27</td><td>Breaume</td><td>Foxwood.</td></tr>
+      </table>
+      <p>Gawaine zaś zapisuje:</p>
+      <table class="money">
+        <tr><td>Oddziały</td><td>Skąd</td><td>Dokąd</td></tr>
+        <tr><td>22,38,13,35</td><td>Fletcham</td><td>Foxwood</td></tr>
+      </table>
+    </div>
+    <div class="col">
+      <div class="fig" style="margin-top:0;"><img src="img/x-011.png" style="width:70mm;"></div>
+    </div>
+  </div>
+  <p>Rozpoczyna się pierwsza faza i sytuacja wygląda tak:</p>
+  <div class="fig"><img src="img/x-012.png" style="width:122mm;"></div>
+  <div class="cols">
+    <div class="col">
+      <p>Lancelot spogląda na Gawaine'a: „Ufam, Panie, że twoje prostaki i wieśniaki nie zmierzają do Foxwood, które moi dobrzy rycerze zajmą dla mego panowania?” (widać, jakich idiotów musieliśmy używać do testowania gry).</p>
+    </div>
+    <div class="col">
+      <p>„Gówno prawda” — odpowiada Gawaine. (I co, nie mówiłem?) Na koniec pory roku obie strony stają naprzeciw siebie we włości Foxwood.<br>
+      Chłopi porzucili pracę i ustawili się wzdłuż polnej drogi przez środek wsi, by obejrzeć widowisko.<br>
+      Niech bitwa się rozpocznie!</p>
+    </div>
+  </div>
+  <div class="cols">
+    <div class="col">
+      <p>Siły Lancelota to:</p>
+      <div class="fig" style="margin:0.3em 0;"><img src="img/x-013.png" style="width:40mm;"></div>
+      <p>Ich Wartość Ataku wynosi 3+6+6=15 plus rzut kością, w którym wypada 4 — co daje WA 19.</p>
+    </div>
+    <div class="col">
+      <p>Siły Gawaine'a to:</p>
+      <div class="fig" style="margin:0.3em 0;"><img src="img/x-014.png" style="width:54mm;"></div>
+      <p>Ich Wartość Ataku to 3+2+5+3=13 plus rzut kością, w którym wypada 3 — co daje WA 16.</p>
+    </div>
+  </div>
+  <p style="margin-top:0.8em;">Lancelot jest więc w tej rundzie walki stroną silniejszą, Gawaine słabszą; różnica wynosi 3. Lancelot rzuca kością według wyników strony silniejszej i wyrzuca 5. Odnosi ranę i decyduje się przydzielić ją swojemu zbrojnemu o numerze 17, którego żeton zostaje odwrócony, a siła bojowa spada do 1. Gawaine rzuca kością i wyrzuca 1 — bez rany.</p>
+  <p>W drugiej rundzie walki Wartości Ataku wynoszą:<br>
+  Lancelot 1+6+6=14 + rzut kością 2 = 16. Gawaine 3+2+5+3=13 + rzut kością 6 = 19.<br>
+  I proszę — sytuacja się odwróciła! Okrutny los płata takie psikusy. (Autorzy zasad też.)</p>
+  <p>Lancelot wyrzuca 4 według wyniku strony słabszej i jego zbrojny numer 17 odnosi kolejną ranę, po czym niezwłocznie wyzionął ducha; Gawaine zaś wyrzuca 3 i przyjmuje ranę na swoim zbrojnym numer 38.</p>
+  <p>W tym momencie Lancelot głęboko się zastanawia. Choć Wartości Ataku są teraz równe (12:12), jeszcze jedna rana uczyniłaby jego siły bezbronnymi, podczas gdy Gawaine może przyjąć kolejną ranę kosztem zaledwie 1 punktu i marnego zbrojnego. Mrucząc pod nosem plugawe i niecenzuralne przekleństwa, wycofuje się, zostawiając Gawaine'owi Foxwood do zajęcia na koniec pory roku.</p>
+</div>
+
+<!-- ============ STRONA 12 ============ -->
+<div class="page">
+  <div class="sec">
+    <h2>9. OPACTWO I PRZEORAT</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Opactwo Carse i przeorat Bestly to niezależne zgromadzenia zakonne, których żaden gracz nie może posiadać (są własnością Kościoła!). Jednakże dochód z ich uczciwej pracy jest znaczny, a że to ludzie pokoju, stanowią kuszący cel jesiennego najazdu… Ujmijmy to inaczej: jeśli ty się tym nie zajmiesz, zajmie się któryś z pozostałych....</p>
+        <p><span class="lbl">i. Najazd na opactwo i przeorat:</span> gracze mogą jednak jesienią najechać opactwo i przeorat, by zawłaszczyć ich dochód. Dokonuje się tego, mając siły na ich terenie na koniec jesieni. Dochód z każdego z nich wynosi 6 Bz w roku złym i przeciętnym, a 8 Bz w roku dobrym.</p>
+      </div>
+      <div class="col">
+        <p><span class="lbl">ii. Wiele sił:</span> jeśli dwóch graczy ma jednocześnie siły w tym samym zgromadzeniu, obowiązują następujące zasady:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;Obie siły mogą stoczyć walkę o dochód. Ponieważ jednak stoją na poświęconej ziemi, jeden z graczy może wycofać swoje siły przed rozpoczęciem walki, a nie dopiero po dwóch rundach.</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Mogą też uzgodnić podział dochodu.</p>
+        <p><span class="lbl">iii. Powrót do włości:</span> na koniec jesieni grupa najeźdźców zawsze wraca do najbliższej przyjaznej włości.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>10. ŚMIERĆ LORDA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Od czasu do czasu gracze bywają na tyle nierozważni, by pozwolić swemu lordowi zginąć w bitwie albo umrzeć na zarazę (zasady opcjonalne). Gdy przydarzy się to nieszczęście, obowiązują następujące zasady:</p>
+        <p><span class="lbl">i. Odwrót do włości:</span> po śmierci lorda wszystkie oddziały tego gracza do końca danej pory roku zmierzają ku najbliższej włości należącej do gracza, ignorując wszelkie inne zapisane rozkazy. Gracze mogą wybierać trasy tak, by omijać oddziały innych graczy, ale muszą się poruszać. Na koniec pory roku wszystkie oddziały nieznajdujące się w macierzystych włościach umieszcza się w najbliższej ich włości (licząc w milach).</p>
+        <p><span class="lbl">ii. Reszta roku:</span> gracz nie może pisać kolejnych rozkazów przez pozostałe pory kampanii tego roku, choć jego oddziały mogą bronić włości, które aktualnie zajmują.</p>
+      </div>
+      <div class="col">
+        <p><span class="lbl">iii. Mianowanie nowego lorda:</span> zimą nowym lordem można mianować rycerza klasy A (jeśli żaden rycerz klasy A nie jest dostępny, gracz musi przeczekać rok, aż jakiś będzie).<br>
+        Aby mianować nowego lorda, wykonaj następujące kroki:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;Twój główny Rycerz Okrągłego Stołu nie żyje, nie może więc brać udziału w dalszej grze. Musisz zatem wskazać rycerza klasy A, który go zastąpi.</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Zanotuj numer identyfikacyjny wybranego rycerza na karcie rozkazów. Od teraz to on jest twoim lordem.</p>
+        <p class="hang">(c)&nbsp;&nbsp;&nbsp;Jego siła bojowa pozostaje taka sama jak dotąd, ale jeśli zginie w bitwie, musisz powtórzyć opisaną wyżej procedurę.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>11. OPŁACANIE POCZTU</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Choć zbrojnych można zwolnić ze służby na początku zimy, lord nigdy nie może zwolnić nikogo ze swego pocztu rycerzy. Lord musi opłacić ze skarbca tylu rycerzy, ilu zdoła, i nie wolno mu zatrzymywać żadnych pieniędzy, dopóki rycerze pozostają nieopłaceni.</p>
+        <p><span class="lbl">i. Nieopłacony poczet:</span> jeśli jednak środków nie starcza na opłacenie wszystkich rycerzy, wówczas wszyscy nieopłaceni i częściowo opłaceni rycerze zostają zwolnieni ze służby.</p>
+      </div>
+      <div class="col">
+        <p><span class="lbl">ii. Rzuty lojalności:</span> po zwolnieniu nieopłaconych rycerzy pozostali wykonują rzut lojalności, by sprawdzić, czy chcą dalej służyć lordowi, którego nie stać nawet na opłacenie tych, co zarabiają na życie umieraniem za niego!</p>
+        <p>Rzuć kością za każdego rycerza. Przy wyniku 5 lub 6 rycerz dezerteruje i zostaje usunięty z gry, zabierając ze sobą swój żołd. Gracz może teraz przegrupować siły w obrębie swoich włości jak w normalnej grze.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">12</div>
+</div>
+
+<!-- ============ STRONA 13 ============ -->
+<div class="page">
+  <div class="bighead">B. ZASADY OPCJONALNE</div>
+  <p>W te zasady można grać zarówno z grą podstawową, jak i zaawansowaną. Nie trzeba stosować wszystkich zasad opcjonalnych — tylko te, których chcesz używać.</p>
+  <div class="sec">
+    <h2>12. POGODA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Pogoda w oczywisty sposób wpływa na zbiory, a więc i na dochody. Przyjmuje się jednak, że jej wpływ na las jest bardzo mały, dlatego poniżej opisano tylko dochody z pól ornych, pszczelarstwa i rzeki.</p>
+      </div>
+      <div class="col">
+        <p><span class="lbl">i. Ustalanie pogody:</span> rzuć kością na koniec wiosny, lata i jesieni. Przesuń znacznik pogody po torze pogody o tyle pól, ile wypadło. Pozycja znacznika na koniec jesieni określa pogodę roku. Możliwe są trzy wyniki: rok zły, przeciętny i dobry.</p>
+      </div>
+    </div>
+    <table class="rules" style="width:88%; margin:0.6em auto 0.9em;">
+      <tr><th>Suma rzutów pogody</th><th>&lt;9<br>ZŁY</th><th>9-12<br>PRZECIĘTNY</th><th>13+<br>DOBRY</th></tr>
+      <tr><td>Pola orne</td><td>Zła pogoda zmniejsza dochód włości o 1 Bz za każde pole orne.</td><td>Bez efektu.</td><td>Rzuć kością*: 1-4 bez efektu, 5-6 rekordowe zbiory — wszystkie włości +1.</td></tr>
+      <tr><td>Rzeka</td><td>Cały dochód z rzeki wynosi w tym roku 2 Bz.</td><td>Bez efektu.</td><td>Rzuć kością*: 1-4 bez efektu, 5-6 zbyt gorąco — brak dochodu.</td></tr>
+      <tr><td>Pszczoły</td><td>Za zimno na miód — w tym roku brak dochodu.</td><td>Bez efektu.</td><td>Znakomity rok miodowy. Wszystkie ule dają 2 Bz.</td></tr>
+      <tr><td colspan="4" style="font-size:7.8pt;">* Jeden rzut kością dotyczy wszystkich graczy.</td></tr>
+    </table>
+  </div>
+  <div class="sec">
+    <h2>13. DWORY I ZAMKI</h2>
+    <div class="cols">
+      <div class="col">
+        <p class="q">„Lecz sir Lancelot schronił się w swym warownym zamku... wtedy nadciągnął sir Gawaine z ogromnym wojskiem i obległ wszystko wokół, i miasto, i zamek, i toczono zaciętą wojnę po obu stronach.”</p>
+        <p class="att">Le Morte D'Arthur. Księga xx, rozdział 11.</p>
+        <p><span class="lbl">i. Dwory:</span> każda włość ma na swoim środku warowny dwór. Gracz musi dzierżyć włość, by móc korzystać z dworu w sposób opisany niżej.</p>
+        <p>Gdy jakaś siła atakuje włość, obrońca ma trzy możliwości:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;Bronić się w otwartym polu przy normalnych wartościach ataku. Najeźdźca nie może plądrować ani przechodzić przez włość.</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Wycofać się do dworu. Najeźdźca może wtedy albo zaatakować dwór — w takim razie obrońca otrzymuje premię +5 do Wartości Ataku, odzwierciedlającą lepszą pozycję obronną — albo, nie zważając na tchórzy zamkniętych we dworze, splądrować włość (zasady plądrowania niżej) i w następnej fazie ruchu lub porze roku przejść przez włość.</p>
+      </div>
+      <div class="col">
+        <p class="hang">(c)&nbsp;&nbsp;&nbsp;Obrońca może walczyć w otwartym polu przez dwie rundy, a potem wycofać się do dworu. Atakujący może wtedy splądrować włość i przejść przez nią w następnej fazie ruchu lub porze roku.</p>
+        <p><span class="lbl">ii. Zamki:</span> gracze mogą kupować zamki w cenie 10 Bz. Gdy zamek stoi we włości, obrońcy mają Wartość Ataku zwiększoną o +5, walcząc w otwartym polu, lub o +10, jeśli zdecydują się zaszyć w zamku. Najeźdźca ma te same możliwości co wyżej. Raz zbudowany zamek pozostaje do końca gry, zmieniając właściciela wraz z zajęciem włości.</p>
+        <p><span class="lbl">iii. Oblężenie:</span> siły najeżdżającego gracza mogą oblegać siły innego gracza, które wycofały się do dworu lub zamku, pozostając we włości do następnej pory roku. Siły oblegające mogą plądrować tylko w pierwszej porze roku.</p>
+        <p>Na koniec trzeciej fazy ruchu drugiej pory roku oblężenie uznaje się za udane i siły broniące się będą walczyć przy normalnych wartościach ataku. Do włości można wprowadzać nowe siły, by wzmocnić którąkolwiek ze stron (o ile nie przekroczą limitu liczebności), lecz jeśli obrońca wprowadzi do włości nowe siły, musi dojść do bitwy.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">13</div>
+</div>
+
+<!-- ============ STRONA 14 ============ -->
+<div class="page">
+  <div class="sec">
+    <h2>14. PLĄDROWANIE</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Gracze mogą siać spustoszenie u innych stronnictw, prowadząc wojnę gospodarczą i atakując ich źródła dochodu. Skromny najazd na kluczową włość — powiedzmy tę z młynem wodnym — potrafi całkowicie wywrócić starannie zbilansowany budżet innego lorda. Widok tego to czysta rozkosz!</p>
+        <p><span class="lbl">i. Aby plądrować:</span> oddziały wkraczające do włości innego gracza mogą plądrować, o ile:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;włość jest nieobsadzona, lub</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;siły broniące wycofały się do dworu lub zamku.</p>
+        <p>Plądrujące oddziały mogą:</p>
+        <p class="hang">(a)&nbsp;&nbsp;Spalić wszystkie pola orne przy rzucie 2-6. Rzucaj za każde pole orne we włości. Jeśli spłonęło, połóż znacznik dymu na jednostce ziemi.</p>
+        <p class="hang">(a)&nbsp;&nbsp;Zniszczyć wszystkie ule przy rzucie 2-6. Jeśli ul zniszczono, zdejmij go.</p>
+      </div>
+      <div class="col">
+        <p class="hang">(c)&nbsp;&nbsp;&nbsp;Złupić dobra i gotówkę. Plądrujący gracz rzuca kością i dodaje tyle bezantów do swego skarbca (gracz broniący się nie musi tych pieniędzy odejmować).</p>
+        <p class="hang">(d)&nbsp;&nbsp;&nbsp;Spalić młyn wodny przy rzucie 4-6. Jeśli zniszczony, zdejmij go z planszy.</p>
+        <p class="hang">(e)&nbsp;&nbsp;&nbsp;Zabić włodarzy przy rzucie 5-6. Jeśli zabici, zdejmij ich z planszy.</p>
+        <p><span class="lbl">ii. Wpływ plądrowania na dochód:</span> przy żniwach odejmij 1 bezant od dochodu za każde pole orne ze znacznikiem dymu. Po żniwach zdejmij znacznik dymu.</p>
+        <p><span class="lbl">iii. Plądrowanie podczas oblężeń:</span> gracz oblegający siły innego gracza we dworze lub zamku może plądrować włość, jak opisano wyżej.<br>
+        Uwaga: plądrowanie to czynność zastępująca walkę. Oddziały biorące udział w walce nie mogą plądrować.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>15. RZUTY LOSU</h2>
+    <p>Na początku wiosny każdego roku jeden z graczy rzuca kością trzy razy i sumuje wyniki. Sprawdź tabelę rzutów losu na stronie 20 i natychmiast wykonaj wskazane działania.</p>
+  </div>
+  <div class="sec">
+    <h2>16. WYCENA MAJĄTKU</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Gdy graczom kończy się czas na grę, gdy chcą grać do ustalonej godziny albo z innego powodu skrócić Excalibura, przeprowadza się opisaną niżej wycenę majątku graczy, by wyłonić zwycięzcę.<br>
+        Ten system wyceny można też stosować w grze turniejowej, w której każda partia trwa np. dwie godziny, po czym przeprowadza się wycenę.</p>
+        <p><span class="lbl">i. Wycena w grze podstawowej.</span></p>
+        <p><span class="lbl">i.</span> Każdą posiadaną włość wyceń na 15 Bz.<br>
+        <span class="lbl">ii.</span> Wszystkie ulepszenia wyceń według wartości nominalnej, np. włodarze po 2 Bz, ule po 2 Bz itd.</p>
+        <p><span class="lbl">iii.</span> Rycerzy wyceń po 4 Bz, a zbrojnych po 2 Bz. <span class="lbl">iv.</span> Zsumuj wszystko wraz z posiadaną gotówką.</p>
+      </div>
+      <div class="col">
+        <p><span class="lbl">v.</span> Zwycięzcą zostaje gracz z najwyższą kwotą po wycenie.</p>
+        <p><span class="lbl">ii. Wycena w grze zaawansowanej:</span> w grze zaawansowanej zamień bezanty na Punkty Czci w stosunku 1 Bz = 1 PC, dodaj posiadane już Punkty Czci — otrzymasz sumę i zwycięzcę.</p>
+      </div>
+    </div>
+  </div>
+  <div class="pgnum">14</div>
+</div>
+
+<!-- ============ STRONA 15 ============ -->
+<div class="page">
+  <div class="bighead">C. ZASADY ZAAWANSOWANE</div>
+  <p>Te zasady znacząco zmieniają charakter gry, wprowadzając Punkty Czci — w istocie system punktów zwycięstwa. Podstawowe założenie gry zaawansowanej jest takie, że w różnych momentach gry król Artur będzie składał wizyty i przyznawał Punkty Czci w zależności od tego, jak dobrze każdy gracz wywiązuje się z obowiązku rozwijania życia gospodarczego i kulturalnego swoich majątków. Zakłada się, że gracze wybierający grę zaawansowaną będą stosować większość, jeśli nie wszystkie zasady opcjonalne.</p>
+  <div class="sec" style="margin-top:1.3em;">
+    <h2>17. WARUNKI ZWYCIĘSTWA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Gra zaczyna się jak zwykle jesienią, a kończy z końcem jesieni dziesięć lat później. Zwycięzcą zostaje gracz, który w ciągu tych dziesięciu lat zgromadzi najwięcej Punktów Czci.</p>
+      </div>
+      <div class="col">
+        <p>Gracze zdobywają Punkty Czci, gromadząc dochód oraz budując kościoły lub kręgi kamienne. Co pewien czas król Artur składa wizytę i przyznaje Punkty Czci.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>18. RELIGIA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Króla Artura żywo obchodzi duchowe dobro jego nowych poddanych i każdy lord pragnący pozyskać jego względy dobrze zrobi, słuchając jego sugestii. Sugeruje on budowanie miejsc kultu, by krzewić życie duchowe twoich chłopów. Swoje zadowolenie z twojej troski okaże podczas objazdów inspekcyjnych.</p>
+        <p><span class="lbl">i. Lordowie chrześcijańscy:</span> tylko lordowie chrześcijańscy mogą budować i posiadać kościoły. Nie mogą budować ani posiadać kręgów kamiennych. Tylko chrześcijanie mogą niszczyć kręgi kamienne.</p>
+      </div>
+      <div class="col">
+        <p><span class="lbl">ii. Lordowie druidzcy:</span> tylko lordowie druidzcy mogą budować i posiadać kręgi kamienne. Nie mogą budować ani posiadać kościołów. Tylko lordowie druidzcy mogą niszczyć kościoły.</p>
+        <p><span class="lbl">iii. Zmiana religii:</span> gracz może zmienić religię w dowolnym momencie gry, niszcząc wszystkie posiadane miejsca kultu swojej dotychczasowej religii i opowiadając się za nową religią.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>19. PARAFIE</h2>
+    <div class="cols">
+      <div class="col">
+        <p class="q">„Wtedy król kazał wznieść i urządzić w tym samym miejscu, gdzie stoczono bitwę, piękne opactwo, i uposażył je hojnie, i kazał je zwać Opactwem La Beale Adventure.”</p>
+        <p class="att">Le Morte D'Arthur. Księga 4, rozdział iv.</p>
+        <p><span class="lbl">i. Granice parafii:</span> parafię tworzy grupa włości. Wszystkie włości w parafii są zgrupowane razem, a ich nazwy wydrukowano na planszy tym samym kolorem.</p>
+        <p><span class="lbl">ii. Budowa w parafii:</span> parafia może zawierać najwyżej jeden kościół i jeden krąg kamienny (ale nie dwa obiekty tego samego rodzaju).<br>
+        Kościoły i kręgi kamienne buduje się zimą, w fazie ulepszania włości; budowa kosztuje 10 Bz. Aby wznieść miejsce kultu, gracz upewnia się, że parafia nie zawiera już miejsca kultu tego</p>
+      </div>
+      <div class="col">
+        <p>rodzaju, płaci pieniądze ze skarbca i kładzie odpowiedni żeton na pastwisku we włości leżącej w wybranej parafii.</p>
+        <p><span class="lbl">iii. Rywalizacja o miejsca budowy:</span> jeśli więcej niż jeden gracz chce w tej samej parafii tej samej zimy zbudować ten sam rodzaj miejsca kultu, pierwszeństwo ustala się następująco:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;Budować może gracz posiadający najwięcej włości w parafii.</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Jeśli obaj gracze mają tyle samo włości, prawo do budowy licytuje się i przypada ono temu, kto zaoferuje najwięcej.<br>
+        (Jeśli gracze chcą tej samej zimy zbudować w parafii różne miejsca kultu, obaj mogą to zrobić.)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STRONA 16 ============ -->
+<div class="page">
+  <div class="sec">
+    <div class="cols">
+      <div class="col">
+        <p><span class="lbl">iv. Wartość:</span> przy każdej wizycie król Artur przyznaje Punkty Czci następująco:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;20 Punktów Czci za każdy kościół lub krąg kamienny we włości, którą gracz posiada w chwili wizyty, o ile w tej parafii nie ma innego miejsca kultu.</p>
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Gdy parafia zawiera zarówno kościół, jak i krąg kamienny, król przyznaje 10 Punktów Czci</p>
+      </div>
+      <div class="col">
+        <p>każdemu graczowi posiadającemu włość, w której stoi dany obiekt.</p>
+        <p><span class="lbl">v. Własność:</span> kościoły i kręgi kamienne nie mają wartości ataku ani obrony, a ich własność przechodzi wraz ze zmianą właściciela włości, w której je zbudowano.</p>
+        <p><span class="lbl">vi. Zniszczenie:</span> lord druidzki, który zdobędzie kościół, musi go zniszczyć natychmiast po zajęciu włości. Podobnie lord chrześcijański, który zdobędzie krąg kamienny.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>21. INSPEKCJE KRÓLA ARTURA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Mimo pilnych obowiązków w innych częściach królestwa Artur kilkakrotnie w ciągu gry złoży wizytę, by ocenić starania swoich sług w budowaniu zasobnego i kwitnącego majątku.</p>
+        <p><span class="lbl">i. Postęp:</span> na początku każdej jesieni rzuć kością, by ustalić, jaki postęp poczynił król Artur w drodze do swojej następnej wizyty. Przesuń żeton króla Artura po drodze z Camelotu ku planszy o liczbę pól wskazaną kością.</p>
+        <p><span class="lbl">ii. Wizyta Artura:</span> gdy łączna suma corocznych rzutów osiągnie dziesięć, król przybywa. Król oceni teraz postępy każdego gracza. Odbywa się to następująco:</p>
+        <p class="hang">(a)&nbsp;&nbsp;&nbsp;Za każdy bezant dochodu tej jesieni przyzna 1 Punkt Czci.</p>
+      </div>
+      <div class="col">
+        <p class="hang">(b)&nbsp;&nbsp;&nbsp;Przyzna 20 Punktów Czci za każdy posiadany kościół i krąg kamienny, gdy stoi on samotnie w parafii.</p>
+        <p class="hang">(c)&nbsp;&nbsp;&nbsp;Przyzna 10 Punktów Czci za każdy posiadany krąg kamienny i kościół, gdy dzieli on parafię z obiektem drugiej religii.</p>
+        <p class="hang">(d)&nbsp;&nbsp;&nbsp;Odejmie 15 Punktów Czci, jeśli w chwili wizyty gracz ma oddziały w opactwie lub przeoracie.</p>
+        <p>Uwaga: postęp króla w drodze z Camelotu ku planszy zaznacza się na karcie z tabelą efektów pogody.</p>
+      </div>
+    </div>
+  </div>
+  <div class="sec">
+    <h2>22. PUNKTY CZCI</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Punkty Czci przyznawane są podczas wizyt króla, jak opisano wyżej, a gracze powinni prowadzić sumę przyznanych Punktów Czci. Raz przyznanych Punktów Czci nie można stracić, a po dziesięciu latach o zwycięzcy decyduje wyłącznie ich suma. Punktów Czci nie można w trakcie gry sprzedawać, wymieniać ani spieniężać, a suma punktów gracza nie może spaść poniżej zera.</p>
+        <p>Po dziesięciu latach król Artur przybędzie z ostateczną oceną.<br>
+        Na koniec jesieni dziesiątego roku przyznaj więc Punkty Czci jak zwykle, niezależnie od tego, czy król był z wizytą w zeszłym roku, czy nie. Ostateczne sumy Punktów Czci dają końcowe wyniki gry,</p>
+      </div>
+      <div class="col">
+        <p>a gracz z największą liczbą Punktów Czci zostaje zwycięzcą.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STRONA 17 ============ -->
+<div class="page" style="font-size:8.3pt;">
+  <div style="text-align:center; font-size:13pt; font-weight:bold; margin-bottom:0.8em;">SPOŁECZEŃSTWO NIEWOLNIKÓW?</div>
+  <div style="text-align:center; font-weight:bold; font-style:italic; margin-bottom:1.4em; font-size:10pt;">Kilka uwag o społeczeństwie feudalnym.</div>
+  <div class="cols">
+    <div class="col">
+      <p>System feudalny należy do słabiej rozumianych form organizacji społecznej naszej historycznej przeszłości. Większość z nas zna oczywiście podstawy tego, jak działał, lecz o ile plemienność, rządy rzymskie i inne archaiczne formy władzy współczesny umysł pojmuje łatwiej, o tyle prawdziwe wniknięcie w feudalizm — zrozumienie, dlaczego i jak powstał oraz jakie były skutki jego działania — wymaga niemałego wysiłku woli. Po części dlatego, że świadectwa historyczne jego ewolucji są fragmentaryczne, sprzeczne i niezwykle złożone. Widać też, że w samej Anglii działało kilka odmian systemu feudalnego, nie mówiąc już o innych częściach Europy. Wreszcie natura feudalizmu nieustannie się zmieniała.</p>
+      <p>Na większość potrzeb feudalizm można jednak podzielić na dwa okresy. W pierwszym — który zaczyna się hen we wczesnych latach panowania Sasów w Anglii po ich najeździe i podboju w V wieku n.e., a kończy na podboju normandzkim (z braku lepszej daty, na której można by zawiesić nasze opinie) — społeczeństwo angielskie przeszło od wolnych, plemiennych posiadaczy ziemi (a może trafniej: współdzierżawców) i rolników rządzonych przez lokalnego plemiennego króla do narodu rządzonego przez jednego króla, w którym ogromna większość ludności była spętana strukturą danin i powinności czyniącą z chłopa niemal niewolnika swego pana. Drugi okres, trwający od podboju przez około dwieście lat, przyniósł wpisanie w tę strukturę konnego rycerza, uczynienie z włości geograficznego ośrodka organizacji feudalnej oraz ścisłą kodyfikację feudalizmu i jego spis w Domesday Book. Feudalizm normandzki był jego szczytową postacią w Anglii — od tego momentu zaczął się jego zmierzch i choć wiele zewnętrznych struktur feudalizmu pozostało nietkniętych, Anglia z wolna wsuwała się w okres średniowieczny.</p>
+      <p>Wciąż popularne są dwa mity o społeczeństwie feudalnym. Pierwszy — że trwało długo. W rzeczywistości feudalizm nigdy nie osiągnął w Europie pełni rozkwitu i zaczął podupadać, ledwie doszedł szczytu. Drugi — że stanowi jakiś wyższy etap ewolucji społecznej. Jak zobaczymy, feudalizm był głębokim upadkiem cywilizacji zachodniej, odpowiedzią na wyjątkowe i wyniszczające okoliczności, jakich wcześniej nie było i jakie już się nie powtórzą.</p>
+      <p>Strukturalnie system feudalny był nadzwyczaj złożonym łańcuchem prawnie egzekwowalnych powinności, podatków i posług oddawanych przez niższą klasę społeczną klasie wyższej — łańcuchem nieprzerwanie biegnącym od przypisanego do ziemi chłopa aż do króla. W teorii nikt poza królem nie posiadał ziemi, a niedopełnienie należnych posług lub powinności wobec zwierzchnika mogło skutkować pozbawieniem prawa do ziemi, a przez to zupełną nędzą.</p>
+      <p>W porównaniu ze społeczeństwem współczesnym trzeba wskazać dwa inne zasadniczo odmienne czynniki. Po pierwsze, nie istniało życie miejskie w naszym rozumieniu. Były miasta, nawet duże, lecz o wiele mniejsze, niż sugerowałoby współczesne znaczenie tego słowa, i będące głównie siedzibami władzy kościelnej, administracyjnej i wojskowej — co oznaczało, że</p>
+    </div>
+    <div class="col">
+      <p>zamieszkanie w mieście nie było możliwością dostępną dla większości ludzi. Po drugie, całe społeczeństwo, od chłopa pańszczyźnianego po króla, żyło w ścisłej zażyłości z ziemią: mieszkało na niej, pracowało na niej i było od niej całkowicie zależne. Nawet najwyższy lord spędzał znaczną część życia na doglądaniu swoich majątków, mimo uciążliwych obowiązków wojskowych. Analiza Domesday Book daje mrożący obraz feudalnej Anglii.</p>
+      <p>Ludność miejska: 175 000 (ok. 10%). Ludność wiejska: 1 600 000 (ok. 90%).<br>
+      Ludność wiejska dzieliła się na kilka głównych grup:<br>
+      Chłopi poddani, zagrodnicy, chałupnicy itd. (przypisani chłopi różnego stopnia): 200 000.<br>
+      Niewolnicy: 28 000.<br>
+      Wolni (różnego stopnia): 37 000.<br>
+      Duchowieństwo: 15 000.<br>
+      Dzierżawcy (możni lub więksi posiadacze ziemi): 7 000.<br>
+      (Te ostatnie liczby nie obejmują rodzin na utrzymaniu, więc nie zsumują się do podanej wyżej liczby ludności wiejskiej.)</p>
+      <p>Mówiąc wprost: ponad 80% pracującej ludności wiejskiej nie było ludźmi wolnymi. Trudno uciec od wniosku, że życie feudalne dla większości ludności polegało głównie na niekończącej się, nienagradzanej pracy przetykanej dziką wojną. Gdy stanie się wobec społeczeństwa z roku 1100 n.e., o tak niezmiennym ubóstwie wyboru materialnego, społecznego i duchowego, i porówna je ze względnym dobrobytem i wolnością rzymskiej Brytanii z roku 400 n.e., można spytać, jak roztrwoniliśmy takie dziedzictwo przez owe 600 lat.</p>
+      <p>Znaczna część winy musi spaść na Sasów. Barbarzyńscy grabieżcy zamożnej, wręcz świetnej rzymskiej prowincji, pogrążyli ją w czterystu latach nieustannych zmagań. Tam, gdzie rzymskie prawo utrzymywało Brytanię w pokoju i dostatku, Sasowie potrafili tylko toczyć niekończący się ciąg międzyplemiennych wojen domowych. Tam, gdzie rzymski oręż trzymał barbarzyńców w większości na dystans, nieudolni, technicznie niekompetentni Sasowie byli niemal bezradni wobec wikingów i Duńczyków. Wikingowie przez rozmach i barbarzyństwo swych najazdów stali się synonimem zarówno zuchwałości, jak i okrucieństwa. Duńczycy zdołali podzielić kraj i wymusić ogromne trybuty. Tam, gdzie niegdyś była jedna prowincja, za Sasów było ich siedem — nie, pięć — nie, osiem. Mrugnij, a kolejna wojna domowa znów przemeblowała scenę polityczną.</p>
+      <p>Nieustanna wojna domowa działa na naród wyniszczająco. Podupada handel, bo kupcy boją się o towary, życie i zyski. Cierpi rolnictwo, bo oracze zostają obróceni w rąbiących członki. Roczne plony może spalić wróg — albo i przyjaciel, żeby nie wpadły w ręce wroga. Zapasy żywności są kradzione lub niszczone. Monety nie bije się ani nie honoruje. Lista nie ma końca, skutek jest ten sam: ubóstwo umysłu i ciała. Naród zwrócony wyłącznie ku wojnie, w którym wojownik jest wszystkim, a cała gospodarka służy jego wystawieniu, wyżywieniu i utrzymaniu. Takim bowiem był europejski</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ STRONA 18 ============ -->
+<div class="page" style="font-size:8.3pt;">
+  <div class="cols">
+    <div class="col">
+      <p>feudalizm — system, w którym cała wytwórczość społeczeństwa była oddana konnemu rycerzowi. Ironia w tym, że każdy w miarę przyzwoity legion rzymski czy grecka falanga szybko uporałyby się z normandzką konnicą — tak ślepy był zaułek myślenia feudalnego.</p>
+      <p>Najbardziej cierpieli oczywiście chłopi. W społeczeństwie nieustannie toczącym wojny chłop musi polegać na żołnierzu, który go chroni. Gdy obrońca jest zarazem panem, któremu należą się daniny, powstaje struktura wysysająca władzę od wolnego chłopa ku żołnierzowi-panu. Rolnik, który wskutek najazdów czy czegokolwiek innego nie może zapłacić danin, rzuca się na łaskę pana, a ten, chroniąc go, żąda zamiany danin na pracę. Chłop uprawia teraz i ziemię pana, i własną. Ponieważ za pracę na ziemi pana nie dostaje nic, a z uszczuplonego czasu na własną ziemię ledwie może utrzymać siebie i rodzinę,</p>
+    </div>
+    <div class="col">
+      <p>on i jego potomkowie już nigdy nie zdołają odzyskać wolności. Naciski gospodarcze zrodzone z niestabilności politycznej wytworzyły samonapędzającą się spiralę w dół, która stopniowo zmieniła lud wolnych posiadaczy ziemi w poddaństwo bliskie niewolnictwu. Choć w praktyce feudalizm był znacznie bardziej złożony i nawet za Normanów istniała warstwa nominalnie wolnego chłopstwa, położenie chłopa rzadko bywało gorsze niż w systemie feudalnym.</p>
+      <p>Ale wrogiem feudalizmu był dobrobyt. Rozwój miast, niższy poziom wojen domowych pod rządami normandzkimi i spustoszenia zarazy rozluźniły okowy pełnego feudalizmu, aż w połowie XIII wieku i społeczeństwo, i krajobraz zaczęły nabierać wyraźnie średniowiecznego charakteru. Po sześciuset latach upadku społeczeństwo angielskie zaczynało patrzeć w górę, nie w dół.</p>
+    </div>
+  </div>
+  <div class="sec" style="margin-top:1.3em;">
+    <h2>NOTATKI PROJEKTANTA</h2>
+    <div class="cols">
+      <div class="col">
+        <p>Podstawowe pomysły na Excalibura chodziły mi po głowie od kilku lat. Feudalna gra w małej skali, o podjazdowej wojnie lokalnych panów o bogactwo ziemi. Nie przypominałem sobie, by ktoś zrobił już grę w tym duchu, a wszystkim, z którymi o niej rozmawiałem, pomysł zdawał się podobać (w odróżnieniu od wielu innych pomysłów, którymi raczę nieszczęśników pracujących lub mieszkających w zasięgu mojego głosu!). Ale w tej grze ważna miała być nie tylko walka, lecz zdolność utrzymania pocztu — z moich lektur jasno bowiem wynika, że największym utrapieniem każdego pana feudalnego było wyciśnięcie z ziemi dość pieniędzy, by utrzymać poczet i pozycję.</p>
+        <p>Wczesne przymiarki do planszy były mapą o szczegółowości map sztabowych, z zaznaczonym każdym kamieniem. Gracze na tyle nierozważni, by stoczyć bitwę, musieli budować teren w dużej skali z wycinanych elementów na zupełnie osobnym polu gry. Zasady walki były tak złożone jak przepisy bitewnych gier figurkowych... nie — one były przepisami gry figurkowej. Gdy niewielka potyczka na początku partii trwała czterdzieści minut, a dwaj pozostali gracze zbijali bąki, stało się jasne, że potrzeba gruntownej zmiany podejścia.</p>
+        <p>Nie wiem, jak pracują inni projektanci gier, ale po nieudanym pierwszym teście mój stosunek do pomysłu zmienia się dramatycznie: z chłopięcego zachwytu nad genialnością idei szybko przechodzi w rozgoryczenie porażką. Pomysł musi z powrotem wkraść się w łaski, nim znów zostanie wypuszczony! Gra leżała więc odłogiem przez</p>
+      </div>
+      <div class="col">
+        <p>około dwa lata, podczas gdy w mojej głowie powoli zachodził proces przebudowy. Aż wreszcie, w parny żar sierpniowego niedzielnego popołudnia 1988 roku, zerwałem się ze smyczy, usiadłem pod brzozami w głębi naszego ogrodu i spisałem — właściwie w całości — cały zestaw zasad drugiej wersji gry. W poniedziałek ją przetestowaliśmy i nagle mieliśmy grę, a nie pobojowisko. Po sześciu miesiącach nieubłaganych testów i poprawek wyłoniła się ostateczna wersja gry, bardzo podobna do tej z sierpniowej niedzieli. Czas zrobił swoje.</p>
+        <p>Koncepcja gry: Julian Musgrave.<br>
+        Rozwój gry: Chris Courtiour, Richard Milner, Jamie Walker, Dieter Schmidt.<br>
+        Grafika pudełka: Ed Dovey.<br>
+        Plansza, żetony i karty włości: Frank Gerwin.<br>
+        Wszystkie projekty gry, grafiki, koncepcje, elementy i mechanizmy są własnością Wotan Games 1988, 1989 &amp; Citadel (Niemcy) 1989.</p>
+      </div>
+    </div>
+  </div>
+  <div style="position:absolute; bottom:15mm; left:0; right:0; text-align:center;">OCR i ponowny skład: Schimmerlos -&gt;BGG &middot; Tłumaczenie polskie: 2026</div>
+  <div class="pgnum">18</div>
+</div>
+
+<!-- ============ STRONA 19 ============ -->
+<div class="page">
+  <h2>25. RZUTY LOSU</h2>
+  <p>Na koniec zimy rzuć kością trzy razy i zsumuj wyniki.</p>
+  <table class="rules" style="margin-bottom:1em;">
+    <tr><td style="width:2.5em;">3</td><td>Zaraza. Każdy gracz rzuca raz za każdego żołnierza, łącznie ze swoim lordem. Przy wyniku 6 żołnierz umiera.</td></tr>
+    <tr><td>4</td><td>Piorun uderza w wieżę kościelną. Każdy gracz posiadający kościół rzuca kością, a gracz z najwyższym wynikiem rzuca następnie za jeden ze swoich kościołów. Przy wyniku 6 kościół zostaje uszkodzony uderzeniem i do czasu naprawy, kosztującej 5 Bz, liczy się tylko za połowę Punktów Czci. Jeśli gracz nie wyrzuci 6, rzuca za jeden ze swoich kościołów gracz z kolejnym najwyższym wynikiem — i tak dalej, aż piorun trafi w któryś kościół. Połóż na kościele znacznik dymu do czasu naprawy.</td></tr>
+    <tr><td>5</td><td>Piorun uderza w krąg kamienny. Postępuj według procedury opisanej wyżej dla kościołów.</td></tr>
+    <tr><td>6</td><td>Bunt chłopski. Dotyczy wszystkich włości wszystkich graczy, w których stoi mniej niż dwóch żołnierzy. Rozpatruj każdą włość po kolei. Chłopi wyrzucają każdego żołnierza z włości. Rzuć za żołnierza: przy wyniku 6 ginie. Jeśli przeżyje, wycofuje się do połączonej przyjaznej włości. Jeśli ten ruch oddziału zwiększy liczbę żołnierzy w owej włości powyżej jednego, tamta włość się nie zbuntuje. Zbuntowana włość wraca do stanu bezpańskiego, jej kartę się oddaje i można ją zajmować tak jak na początku gry.</td></tr>
+    <tr><td>7</td><td>Zimowe sztormy uszkadzają zamki. Każdy gracz rzuca za każdy swój zamek. Przy wyniku 6 zamek jest uszkodzony i do czasu naprawy za 5 Bz daje w obronie tylko +2 i +5. Połóż na uszkodzonym zamku znacznik dymu do czasu naprawy.</td></tr>
+    <tr><td>8</td><td>Wiosenne powodzie. Rzuć kością za każdy most. Przy wyniku 5 lub 6 zostaje w tym roku zerwany. Połóż na moście znacznik dymu i zdejmij go następnej zimy.</td></tr>
+    <tr><td>9</td><td>Rycerz i zbrojny dezerterują z włości gracza posiadającego najwięcej włości.</td></tr>
+    <tr><td>10</td><td>Pożary lasów. Każdy gracz rzuca kością za każdą swoją jednostkę lasu. Przy 5 lub 6 trawi ją ogień i nie przyniesie w tym roku dochodu. Połóż na jednostce znacznik dymu i zdejmij go następnej zimy.</td></tr>
+    <tr><td>11</td><td>W tym roku brak dochodu z opactwa Carse i przeoratu Bestly.</td></tr>
+    <tr><td>12</td><td>Rycerz i zbrojny przyłączają się do gracza posiadającego najmniej włości.</td></tr>
+    <tr><td>13</td><td>Starszy rycerz wraca z zagranicy i przyłącza się do gracza, który wyrzuci najwięcej na kościach.</td></tr>
+    <tr><td>14</td><td>Pobierz tarczowe w wysokości 1 Bz od każdej włości. Nie można go wydać do następnej zimy.</td></tr>
+    <tr><td>15</td><td>Kamieniarze kończą pobliską katedrę i szukają pracy. Następnej zimy wszystkie kościoły będą za pół ceny.</td></tr>
+    <tr><td>16</td><td>Wczesne rojenie. Każdy gracz rzuca za każdy swój ul. Przy wyniku 4, 5 lub 6 połóż dodatkowy ul na sąsiednim wolnym pastwisku, jeśli takie jest. Pastwisko to nie może już mieć ula, ale może być oddzielone drogą, rzeką lub wzniesieniem. Gracz może wybrać, czy jego pszczoły roją się do włości innego gracza.</td></tr>
+    <tr><td>17</td><td>Król nakazuje zmianę granic. Każdy gracz przejmuje jedną włość od gracza po swojej prawej stronie.</td></tr>
+    <tr><td>18</td><td>W tym roku podwójny dochód z opactwa Carse i przeoratu Bestly.</td></tr>
+  </table>
+  <div style="border:1.5px solid #000; width:150mm; margin:0 auto; padding:3mm;">
+    <div style="font-size:11pt; font-weight:bold; margin-bottom:2mm; padding-left:2mm;">EXCALIBUR &mdash; karta zapisu ruchów dla Sir .....................</div>
+    <table class="sheet">
+      <tr>
+        <td class="season">WIOSNA</td><td class="blank">&nbsp;</td>
+        <td style="border:none; width:3mm;"></td>
+        <td class="season">WIOSNA</td><td class="blank">&nbsp;</td>
+      </tr>
+      <tr><td class="season">LATO</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">LATO</td><td>&nbsp;</td></tr>
+      <tr><td class="season">JESIEŃ</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">JESIEŃ</td><td>&nbsp;</td></tr>
+      <tr><td style="border:none;" colspan="5" height="6"></td></tr>
+      <tr><td class="season">WIOSNA</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">WIOSNA</td><td>&nbsp;</td></tr>
+      <tr><td class="season">LATO</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">LATO</td><td>&nbsp;</td></tr>
+      <tr><td class="season">JESIEŃ</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">JESIEŃ</td><td>&nbsp;</td></tr>
+      <tr><td style="border:none;" colspan="5" height="6"></td></tr>
+      <tr><td class="season">WIOSNA</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">WIOSNA</td><td>&nbsp;</td></tr>
+      <tr><td class="season">LATO</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">LATO</td><td>&nbsp;</td></tr>
+      <tr><td class="season">JESIEŃ</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">JESIEŃ</td><td>&nbsp;</td></tr>
+      <tr><td style="border:none;" colspan="5" height="6"></td></tr>
+      <tr><td class="season">WIOSNA</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">WIOSNA</td><td>&nbsp;</td></tr>
+      <tr><td class="season">LATO</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">LATO</td><td>&nbsp;</td></tr>
+      <tr><td class="season">JESIEŃ</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">JESIEŃ</td><td>&nbsp;</td></tr>
+      <tr><td style="border:none;" colspan="5" height="6"></td></tr>
+      <tr><td class="season">WIOSNA</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">WIOSNA</td><td>&nbsp;</td></tr>
+      <tr><td class="season">LATO</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">LATO</td><td>&nbsp;</td></tr>
+      <tr><td class="season">JESIEŃ</td><td>&nbsp;</td><td style="border:none;"></td><td class="season">JESIEŃ</td><td>&nbsp;</td></tr>
+    </table>
+  </div>
+  <div class="pgnum">19</div>
+</div>
+
+</body>
+</html>
